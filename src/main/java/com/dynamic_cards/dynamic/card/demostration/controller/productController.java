@@ -10,7 +10,9 @@ public class productController {
 
 
     @GetMapping("/products")
-
+    public String ViewProductsCards(){
+        return "products";
+    }
 
 
 }
