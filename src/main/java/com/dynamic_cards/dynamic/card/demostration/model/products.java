@@ -10,53 +10,42 @@ public class products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    private String name;
-    private String email;
-    private String bio;
+    private int productID;
+    private String productName;
+    private String productDetail;
 
 
     public products(){
 
     }
 
-    public products(int id, String name, String email, String bio) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.bio = bio;
+    public products(int productID, String productName, String productDetail) {
+        this.productID = productID;
+        this.productName = productName;
+        this.productDetail = productDetail;
     }
 
-
-    public int getId() {
-        return id;
+    public int getProductID() {
+        return productID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setProductID(int productID) {
+        this.productID = productID;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getProductDetail() {
+        return productDetail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
+    public void setProductDetail(String productDetail) {
+        this.productDetail = productDetail;
     }
 }
