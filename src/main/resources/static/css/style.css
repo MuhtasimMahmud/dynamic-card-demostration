@@ -1,0 +1,18 @@
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    width: 18rem;
+    margin: 0.2rem;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0);
+    padding: 1rem;
+}
+
+.product:hover{
+    /*width: 20rem;*/
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0);
+
+}
