@@ -68,10 +68,15 @@ const products = [
 
 const productsElement = document.querySelector('.products');
 
-const loadAllData = () => {
-    products.map(product => {
-        console.log(product);
-    })
+function loadAllData(){
+
+    for (let i=0; i<products.length; i++){
+        console.log(products[i]);
+    }
+
+    // products.map(product => {
+    //     console.log(product);
+    // })
 }
 
 loadAllData();
